@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
+    print("Request coming in, sleep for 110 second")
     thread.sleep(110)
     return "Hello World!"
 
