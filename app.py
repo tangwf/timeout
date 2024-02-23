@@ -1,12 +1,13 @@
 from flask import Flask
 import os
+import time
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello():
-#    print("Request coming in, sleep for 110 second")
-#    thread.sleep(110)
+    print("Request coming in, sleep for 110 second")
+    time.sleep(110)
     return "Hello World!"
 
 if __name__ == '__main__':
